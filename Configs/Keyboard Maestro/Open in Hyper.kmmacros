@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>789544838.40975201</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>826</integer>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>set thePath to POSIX path of (path to desktop)tell application "Finder"	if (count of windows) &gt; 0 then		if (count of selection) &gt; 0 then			set theItem to item 1 of selection			try				set thePath to POSIX path of (container of (theItem as alias) as alias)			on error				set thePath to POSIX path of (theItem as alias)			end try		else			set thePath to POSIX path of (target of front window as alias)		end if	end ifend tellset thePath to thePath as texttell application "Keyboard Maestro Engine"	setvariable "CurrentPath" to thePathend tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>837</integer>
+						<key>Application</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>co.zeit.hyper</string>
+							<key>Name</key>
+							<string>Hyper</string>
+							<key>NewFile</key>
+							<string>/Applications/Hyper.app</string>
+						</dict>
+						<key>IsDefaultApplication</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Open1File</string>
+						<key>Path</key>
+						<string>%Variable%CurrentPath%</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>789557033.92755902</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/Applications/Hyper.app</string>
+				<key>ModificationDate</key>
+				<real>789559867.372738</real>
+				<key>Name</key>
+				<string>Open in Hyper</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>3</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>17D78D9C-D121-42B6-806E-D06197DBE0F6</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>LZL' Finder</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.finder</string>
+					<key>Name</key>
+					<string>访达</string>
+					<key>NewFile</key>
+					<string>/System/Library/CoreServices/Finder.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>FCDC65A0-B9A8-4146-AA83-3A44FA72895D</string>
+		<key>UID</key>
+		<string>72104DF3-9CDE-476B-8161-79B3C53F4130</string>
+	</dict>
+</array>
+</plist>
