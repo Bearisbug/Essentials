@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>789758675.92365396</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>1624</integer>
+						<key>IsDefaultApplication</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>Open1File</string>
+						<key>Path</key>
+						<string>/System/Library/CoreServices/Finder.app</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>790175744.99420595</real>
+				<key>ModificationDate</key>
+				<real>790175822.85967302</real>
+				<key>Name</key>
+				<string>Open Finder</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>3</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2048</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>1B5F24B1-6F9B-4050-B921-3C4AB2807D04</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>52F488CC-5B73-4941-8FB8-E78EF09D3819</string>
+		<key>UID</key>
+		<string>804D32AF-0B39-439F-8EF3-493A833B14CA</string>
+	</dict>
+</array>
+</plist>
